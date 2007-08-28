@@ -1,11 +1,11 @@
 Summary: Linux Desktop Testing Project
 Name:    ldtp
-Version: 0.8.0
-Release: %mkrel 2
+Version: 0.9.0
+Release: %mkrel 1
 License: LGPL
 Group:   Graphical desktop/Other
 URL:     http://ldtp.freedesktop.org/
-Source0:  %name-source-%version.tar.bz2
+Source0:  %name-%version.tar.bz2
 BuildRoot: %_tmppath/%name-root
 BuildRequires: at-spi-devel python
 
@@ -28,23 +28,21 @@ We encourage you to join the project and help us to create robust, reliable and
 stable test tool/framework for Unix Desktops. 
 
 %prep
-%setup -q -n %name
+%setup
 
 %build
-CFLAGS="%optflags" CXXFLAGS="%optflags" ./autogen.sh --prefix=%_prefix --disable-debug
+%configure2_5x --disable-debug
 %make
 
 %install
 rm -fr $RPM_BUILD_ROOT
-mkdir -p %{buildroot}%{_bindir}
-install -m 755 src/ldtp %{buildroot}%{_bindir}/ldtp
-cd python
-python setup.py install --record=/tmp/%{name}.files --root=$RPM_BUILD_ROOT
+%makeinstall_std
 
 %clean
 rm -rf $RPM_BUILD_ROOT
 
-%files -f /tmp/%{name}.files
+%files
 %defattr(-,root,root)
 %doc README COPYING ChangeLog
 %{_bindir}/*
+%python_sitelib/*
