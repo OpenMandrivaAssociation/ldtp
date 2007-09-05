@@ -45,4 +45,4 @@ rm -rf $RPM_BUILD_ROOT
 %defattr(-,root,root)
 %doc README COPYING ChangeLog
 %{_bindir}/*
-%python_sitelib/*
+%py_platsitedir/*
