@@ -6,7 +6,6 @@ License: LGPL
 Group:   Graphical desktop/Other
 URL:     http://ldtp.freedesktop.org/
 Source0:  %name-%version.tar.bz2
-BuildRoot: %_tmppath/%name-root
 BuildRequires: at-spi-devel python
 
 %description
