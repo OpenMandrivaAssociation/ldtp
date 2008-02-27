@@ -5,7 +5,7 @@ Release: %mkrel 1
 License: LGPL
 Group:   Graphical desktop/Other
 URL:     http://ldtp.freedesktop.org/
-Source0:  %name-%version.tar.bz2
+Source0: http://download.freedesktop.org/ldtp/1.x/1.0.x/%name-%version.tar.bz2
 BuildRoot: %_tmppath/%name-root
 BuildRequires: at-spi-devel python
 
