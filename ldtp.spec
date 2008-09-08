@@ -1,7 +1,7 @@
 Summary: Linux Desktop Testing Project
 Name:    ldtp
 Version: 1.3.0
-Release: %mkrel 1
+Release: %mkrel 2
 License: LGPL
 Group:   Graphical desktop/Other
 URL:     http://ldtp.freedesktop.org/
