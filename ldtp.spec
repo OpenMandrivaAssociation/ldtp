@@ -1,11 +1,11 @@
 Summary: Linux Desktop Testing Project
 Name:    ldtp
-Version: 1.6.0
+Version: 1.7.1
 Release: %mkrel 1
 License: LGPL
 Group:   Graphical desktop/Other
 URL:     http://ldtp.freedesktop.org/
-Source0: http://download.freedesktop.org/ldtp/1.x/1.6.x/%name-%version.tar.gz
+Source0: http://download.freedesktop.org/ldtp/1.x/1.xi76.x/%name-%version.tar.gz
 BuildRoot: %_tmppath/%name-root
 BuildRequires: at-spi-devel python
 
