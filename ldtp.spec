@@ -1,8 +1,8 @@
 Summary: Linux Desktop Testing Project
 Name:    ldtp
-Version: 1.7.1
+Version: 2.0.5
 Release: %mkrel 1
-License: LGPL
+License: GPLv2+/LGPLv2.1+
 Group:   Graphical desktop/Other
 URL:     http://ldtp.freedesktop.org/
 Source0: http://download.freedesktop.org/ldtp/1.x/1.xi76.x/%name-%version.tar.gz
@@ -31,20 +31,20 @@ stable test tool/framework for Unix Desktops.
 %setup
 
 %build
-%configure2_5x --disable-debug
-%make
+
+%{__python} setup.py build
 
 %install
 rm -fr $RPM_BUILD_ROOT
-%makeinstall_std
+
+%{__python} setup.py install --skip-build --root="%{buildroot}" --prefix="%{_prefix}"
 
 %clean
 rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(-,root,root)
-%doc README COPYING ChangeLog
+%doc README COPYING 
 %{_bindir}/*
 %py_platsitedir/*
-%_datadir/ldtp
 
