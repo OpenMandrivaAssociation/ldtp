@@ -7,7 +7,7 @@ Group:   Graphical desktop/Other
 URL:     http://ldtp.freedesktop.org/
 Source0: http://download.freedesktop.org/ldtp/1.x/1.xi76.x/%name-%version.tar.gz
 BuildRoot: %_tmppath/%name-root
-BuildRequires: at-spi-devel python
+BuildRequires: at-spi-devel python-devel
 
 %description
 GNU/Linux Desktop Testing Project (GNU/LDTP) is aimed at producing high quality
@@ -28,7 +28,7 @@ We encourage you to join the project and help us to create robust, reliable and
 stable test tool/framework for Unix Desktops. 
 
 %prep
-%setup
+%setup -q
 
 %build
 
@@ -46,5 +46,5 @@ rm -rf $RPM_BUILD_ROOT
 %defattr(-,root,root)
 %doc README COPYING 
 %{_bindir}/*
-%py_platsitedir/*
+%py_puresitedir/*
 
