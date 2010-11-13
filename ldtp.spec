@@ -1,13 +1,18 @@
 Summary: Linux Desktop Testing Project
 Name:    ldtp
 Version: 2.0.6
-Release: %mkrel 1
-License: GPLv2+/LGPLv2.1+
+Release: %mkrel 2
+License: LGPL
 Group:   Graphical desktop/Other
 URL:     http://ldtp.freedesktop.org/
 Source0: http://download.freedesktop.org/ldtp/1.x/1.xi76.x/%name-%version.tar.gz
 BuildRoot: %_tmppath/%name-root
-BuildRequires: at-spi-devel python-devel
+BuildArch: noarch
+BuildRequires: python
+Requires: python-gobject
+Requires: python-pyatspi
+Requires: python-twisted-core
+Requires: gnome-python-desktop
 
 %description
 GNU/Linux Desktop Testing Project (GNU/LDTP) is aimed at producing high quality
@@ -44,7 +49,6 @@ rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(-,root,root)
-%doc README COPYING 
+%doc AUTHORS README COPYING examples/
 %{_bindir}/*
 %py_puresitedir/*
-
