@@ -52,3 +52,72 @@ rm -rf $RPM_BUILD_ROOT
 %doc AUTHORS README COPYING examples/
 %{_bindir}/*
 %py_puresitedir/*
+
+
+%changelog
+* Sat Nov 13 2010 Bogdano Arendartchuk <bogdano@mandriva.com> 2.0.6-2mdv2011.0
++ Revision: 597027
+- added missing deps and buildrequires
+- fixed license
+- added examples/ in documentation
+
+* Thu Apr 15 2010 Frederic Crozat <fcrozat@mandriva.com> 2.0.6-1mdv2010.1
++ Revision: 535091
+- Release 2.0.6
+
+* Wed Apr 14 2010 Frederic Crozat <fcrozat@mandriva.com> 2.0.5-1mdv2010.1
++ Revision: 534797
+- Fix missing BR
+- Release 2.0.5
+
+* Fri Aug 14 2009 Frederik Himpe <fhimpe@mandriva.org> 1.7.1-1mdv2010.0
++ Revision: 416386
+- Update to new version 1.7.1
+
+* Thu May 14 2009 Frederik Himpe <fhimpe@mandriva.org> 1.6.0-1mdv2010.0
++ Revision: 375709
+- Update to new version 1.6.0
+
+* Tue Jan 06 2009 Funda Wang <fwang@mandriva.org> 1.4.0-2mdv2009.1
++ Revision: 325686
+- rebuild
+
+* Mon Dec 08 2008 Thierry Vignaud <tv@mandriva.org> 1.4.0-1mdv2009.1
++ Revision: 311810
+- new release
+
+* Mon Sep 08 2008 Thierry Vignaud <tv@mandriva.org> 1.3.0-2mdv2009.0
++ Revision: 282750
+- rebuild
+
+* Mon Sep 08 2008 Thierry Vignaud <tv@mandriva.org> 1.3.0-1mdv2009.0
++ Revision: 282732
+- new release
+- rebuild
+- new release
+- add download URL
+- kill re-definition of %%buildroot on Pixel's request
+
+  + Olivier Blin <oblin@mandriva.com>
+    - restore BuildRoot
+
+* Thu Sep 06 2007 Thierry Vignaud <tv@mandriva.org> 0.9.2-1mdv2008.0
++ Revision: 80977
++ rebuild (emptylog)
+
+* Wed Sep 05 2007 Thierry Vignaud <tv@mandriva.org> 0.9.0-2mdv2008.0
++ Revision: 80313
+- fix x86_64 build
+- new release
+- sanitize spec file
+- buildrequires python-devel
+- new release
+- Import ldtp
+
+
+
+* Wed Aug 09 2006 Thierry Vignaud <tvignaud@mandriva.com> 0.5.0-1mdv2007.0
+- new release
+
+* Tue Aug 08 2006 Thierry Vignaud <tvignaud@mandriva.com> 0.4.0-1mdv2007.0
+- initial release
