@@ -1,2 +1,4 @@
+removed_sources:
+  ldtp-2.0.6.tar.gz: d525c971de0cd200b9e6adf77c5f1b20b256aec7
 sources:
-  "ldtp-2.0.6.tar.gz": d525c971de0cd200b9e6adf77c5f1b20b256aec7
+  ldtp-3.5.0.tar.gz: a0cf45fb1d50c968ebe9270df2be0f88bd16af64
