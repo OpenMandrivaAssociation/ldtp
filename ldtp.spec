@@ -10,9 +10,11 @@ BuildRoot: %_tmppath/%name-root
 BuildArch: noarch
 BuildRequires: python
 Requires: python-gobject
-Requires: python-pyatspi
+Requires: pyatspi
+Requires: typelib(Wnck) = 3.0
+Requires: typelib(Gtk) = 3.0
+Requires: typelib(Gdk) = 3.0
 Requires: python-twisted-core
-Requires: gnome-python-desktop
 
 %description
 GNU/Linux Desktop Testing Project (GNU/LDTP) is aimed at producing high quality
