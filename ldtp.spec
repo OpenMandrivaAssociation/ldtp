@@ -4,7 +4,7 @@ Version: 3.5.0
 Release: 2
 License: LGPL
 Group:   Graphical desktop/Other
-URL:     http://ldtp.freedesktop.org/
+URL:     https://ldtp.freedesktop.org/
 Source0: http://download.freedesktop.org/ldtp/1.x/1.xi76.x/%name-%version.tar.gz
 BuildRoot: %_tmppath/%name-root
 BuildArch: noarch
